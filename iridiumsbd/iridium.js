@@ -4,12 +4,12 @@
 // See the sbd.js example to see how to use this. Feel free to send questions and feedback to the email below
 // (C) 2012 Razvan Dragomirescu <razvan.dragomirescu@veri.fi>
 
-var sys = require('sys');
-var clc = require('cli-color');
-var async = require('async');
-var serialport = require("serialport");
-var SerialPort = serialport.SerialPort;
-var EventEmitter = require('events').EventEmitter;
+var sys = require('sys'),
+    clc = require('cli-color'),
+    async = require('async'),
+    serialport = require("serialport"),
+    SerialPort = serialport.SerialPort,
+    EventEmitter = require('events').EventEmitter;
 
 var iridiumEvents = new EventEmitter();
 exports.on = function(ev, callback) {
